@@ -1,0 +1,19 @@
+
+=== TASK 5 RESULTS ===
+STUDENT_ID: 230103224
+LOGICAL_CORES: 11
+TASK_COUNT: 10000
+HASH_ITERATIONS_PER_TASK: 500
+
+ Pool Size | Execution Time (ms) |    Speedup | Status
+---------------------------------------------------------------------------
+         1 |            1350.568 |     1.000x | BASELINE
+         5 |            1313.450 |     1.028x | NO NEW SLOWDOWN
+        11 |            1311.774 |     1.030x | NO NEW SLOWDOWN
+        22 |            1323.074 |     1.021x | FIRST WORSENING
+        44 |            1385.160 |     0.975x | SLOWER THAN BEST
+       176 |            1515.953 |     0.891x | SLOWER THAN BEST
+       256 |            1516.038 |     0.891x | SLOWER THAN BEST
+
+FIRST WORSENING POOL SIZE: 22
+Note: The first slowdown is an observed performance threshold; timing alone cannot prove context switching is its sole cause.
